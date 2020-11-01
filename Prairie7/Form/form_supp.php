@@ -12,10 +12,10 @@
 
 <?php
     try{
-        $nomserveur = "localhost";
-        $userBD = "id15187806_damien";
-        $MDP = "Dabaz420_BaseD";
-        $BaseDonnee = "id15187806_biblio";
+        $nomserveur = "localhost";                      //Variables pour la BD
+        $userBD = "nom_d_utilisateur";
+        $MDP = "mot_de_passe";
+        $BaseDonnee = "nom_base_donnee";
 
         $pdo = new PDO ("mysql:host=$nomserveur;dbname=$BaseDonnee", $userBD, $MDP);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
