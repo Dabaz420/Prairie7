@@ -2,9 +2,9 @@
     function FetchAlllinks(){
     
         $nomserveur = "localhost";                      //Variables pour la BD
-        $userBD = "id15187806_damien";
-        $MDP = "Dabaz420_BaseD";
-        $BaseDonnee = "id15187806_biblio";
+        $userBD = "nom_d_utilisateur";
+        $MDP = "mot_de_passe";
+        $BaseDonnee = "nom_base_donnee";
         
         try {
              $pdo = new PDO ("mysql:host=$nomserveur;dbname=$BaseDonnee", $userBD, $MDP);  //Connexion à la BD
@@ -37,10 +37,10 @@
     function AddNewlink(){                  //Fonction pour ajouter un lien
 
         try{
-            $nomserveur = "localhost";
-            $userBD = "id15187806_damien";
-            $MDP = "Dabaz420_BaseD";
-            $BaseDonnee = "id15187806_biblio";
+            $nomserveur = "localhost";                      //Variables pour la BD
+            $userBD = "nom_d_utilisateur";
+            $MDP = "mot_de_passe";
+            $BaseDonnee = "nom_base_donnee";
             $add = $_POST;
 
             $pdo = new PDO ("mysql:host=$nomserveur;dbname=$BaseDonnee", $userBD, $MDP);
@@ -65,10 +65,10 @@
     function Supplink(){            //Fonction pour supprimer un lien
 
         try{
-            $nomserveur = "localhost";
-            $userBD = "id15187806_damien";
-            $MDP = "Dabaz420_BaseD";
-            $BaseDonnee = "id15187806_biblio";
+            $nomserveur = "localhost";                      //Variables pour la BD
+            $userBD = "nom_d_utilisateur";
+            $MDP = "mot_de_passe";
+            $BaseDonnee = "nom_base_donnee";
             $supp = $_GET["id"];
             
             $pdo = new PDO ("mysql:host=$nomserveur;dbname=$BaseDonnee", $userBD, $MDP);
@@ -89,10 +89,10 @@
     function Modiflink(){                       //Fonction pour modifier un lien
 
         try{
-            $nomserveur = "localhost";
-            $userBD = "id15187806_damien";
-            $MDP = "Dabaz420_BaseD";
-            $BaseDonnee = "id15187806_biblio";
+            $nomserveur = "localhost";                      //Variables pour la BD
+            $userBD = "nom_d_utilisateur";
+            $MDP = "mot_de_passe";
+            $BaseDonnee = "nom_base_donnee";
             $modif = $_GET["id"];              //$modif prend la valeur de l'id qui est passer par la barre url
             $modified = $_POST;                //$modified prend les valeurs du formulaire modifier    
             
